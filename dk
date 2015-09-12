@@ -1,0 +1,25 @@
+#!/bin/bash
+
+deploy() {
+	echo "Deploy procedure not set"
+}
+
+build() {
+	echo "Build procedure not set"
+}
+
+run() {
+	docker run -ti -v $PWD:/app -w /app node bash
+}
+
+clear() {
+	echo "Clear proceddure not set"
+}
+
+refresh(){
+	clear
+	run
+}
+
+# Invoke the provided argument
+$@
