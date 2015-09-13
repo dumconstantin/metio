@@ -1,12 +1,30 @@
 {
-  "name": "holisticjs",
-  "version": "0.0.1",
-  "generator-core-version": ">=1.0.0",
-  "description": "",
-  "main": "main.js",
+  "name": "papilio",
+  "description": "PSD to css, html and image assets",
+  "version": "0.1.0",
+  "license": "MIT".
+  "main": "lib/index.js",
+	"bin": {
+		"papilio": "./bin/papilio.js"
+	},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+		"test": "papilio test",
+ 	 	"test-tap": "papilio test-tap"	
   },
+	"author": "Constantin Dumitrescu <dum.constantin@gmail.com>",
+	"keywords": [
+		"photoshop",
+		"psd",
+		"css",
+		"html",
+		"automated",
+		"psd-to-html",
+		"psd-to-css",
+		"image-assets",
+		"tool",
+		"conversion",
+		"front-end-developer"
+	],
   "dependencies": {
     "archiver": "0.10.x",
     "generator-core": "^3.2.0",
@@ -21,6 +39,5 @@
     "use-strict": "^1.0.0",
     "when": "^3.7.2"
   },
-  "author": "Constantin Dumitrescu",
-  "license": "MIT"
+	"preferGlobal": true
 }
