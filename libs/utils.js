@@ -40,4 +40,6 @@ module.exports = {
     , argumentsToArray: argumentsToArray
     , flattenBy: flattenBy
     , listCall: listCall
+		, formatJson: curryN(3, JSON.stringify)(__, null, 4)
+		, makeFilePath: compose(mkdirSync(__, '0755', true), path.dirname)
 }
