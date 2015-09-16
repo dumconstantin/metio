@@ -8,7 +8,7 @@ GLOBAL.uuid = require('node-uuid').v1
 GLOBAL.when = require('when')
 GLOBAL.slash = require('slash')
 GLOBAL.PNG = require('pngjs').PNG
-GLOBAL.mkdirSync = require('node-fs').mkdirSync
+GLOBAL.mkdirSync = R.curryN(3, require('node-fs').mkdirSync)
 GLOBAL.generatorCore = require('./node_modules/generator-core/lib/generator.js')
 
 
