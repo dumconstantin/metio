@@ -1,15 +1,15 @@
 {
-  "name": "papilio",
-  "description": "PSD to css, html and image assets",
+  "name": "metio",
+  "description": "A JavaScript tool for extracting images and css from Photoshop",
   "version": "0.1.0",
   "license": "MIT".
   "main": "lib/index.js",
 	"bin": {
-		"papilio": "./bin/papilio.js"
+		"metio": "./bin/metio.js"
 	},
   "scripts": {
-		"test": "papilio test",
- 	 	"test-tap": "papilio test-tap"	
+		"test": "metio test",
+ 	 	"test-tap": "metio test-tap"	
   },
 	"author": "Constantin Dumitrescu <dum.constantin@gmail.com>",
 	"keywords": [
