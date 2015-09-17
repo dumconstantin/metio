@@ -1,5 +1,6 @@
 'use strict'
 
+//TODO: Use a recursive method is simpler
 var getProp = R.curry(function (defaultValue, props, obj) {
     return R.defaultTo(defaultValue 
         , R.reduce(R.ifElse(R.is(Object)
@@ -12,15 +13,12 @@ var getProp = R.curry(function (defaultValue, props, obj) {
         )
 })
 
+//TODO: Use immutable js instead
 var setProp = R.curry(function setProperty(propName, propValue, obj) {
-    var clonedObject = R.clone(obj)   
+    var clonedObject = R.clone(obj)
     clonedObject[propName] = propValue
     return clonedObject
 })
-
-var argumentsToArray = function () {
-    return Array.prototype.slice.call(arguments)
-}
 
 var flattenBy = R.curry(function flattenByFunc(prop, list) {
     return list.reduce(function(flatList, item) {
@@ -37,9 +35,8 @@ var listCall = R.curry(function listCallFunc(funcList, list) {
 module.exports = {
     getProp: getProp 
     , setProp: setProp
-    , argumentsToArray: argumentsToArray
+    , argumentsToArray: Array.prototype.slice.call
     , flattenBy: flattenBy
     , listCall: listCall
 		, formatJson: curryN(3, JSON.stringify)(__, null, 4)
-		, makeFilePath: compose(mkdirSync(__, '0755', true), path.dirname)
 }
