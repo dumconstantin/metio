@@ -1,6 +1,6 @@
 {
   "name": "metio",
-  "description": "A JavaScript tool for extracting images and css from Photoshop",
+  "description": "Metio is a JavaScript tool for extracting images and generating css from Photoshop",
   "version": "0.1.0",
   "license": "MIT".
   "main": "lib/index.js",
