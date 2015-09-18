@@ -1,43 +1,43 @@
 {
   "name": "metio",
-  "description": "Metio is a JavaScript tool for extracting images and generating css from Photoshop",
   "version": "0.1.0",
-  "license": "MIT".
-  "main": "lib/index.js",
-	"bin": {
-		"metio": "./bin/metio.js"
-	},
-  "scripts": {
-		"test": "metio test",
- 	 	"test-tap": "metio test-tap"	
+  "description": "Metio is a JavaScript tool for extracting images and generating css from Photoshop",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dumconstantin/metio.git"
   },
-	"author": "Constantin Dumitrescu <dum.constantin@gmail.com>",
-	"keywords": [
-		"photoshop",
-		"psd",
-		"css",
-		"html",
-		"automated",
-		"psd-to-html",
-		"psd-to-css",
-		"image-assets",
-		"tool",
-		"conversion",
-		"front-end-developer"
-	],
+  "main": "lib/index.js",
+  "bin": {
+    "metio": "./bin/metio.js"
+  },
+  "scripts": {
+    "test": "metio test",
+    "test-tap": "metio test-tap"
+  },
+  "author": "Constantin Dumitrescu <dum.constantin@gmail.com>",
+  "keywords": [
+    "photoshop",
+    "psd",
+    "css",
+    "html",
+    "automated",
+    "psd-to-html",
+    "psd-to-css",
+    "image-assets",
+    "tool",
+    "conversion",
+    "front-end-developer"
+  ],
   "dependencies": {
-    "archiver": "0.10.x",
+    "bluebird": "^2.10.0",
     "generator-core": "^3.2.0",
     "image-size": "0.2.x",
-    "lodash": "^3.5.0",
     "node-fs": "^0.1.7",
     "node-uuid": "^1.4.3",
     "pngjs": "0.4.x",
     "ramda": "^0.11.0",
-    "slash": "^1.0.0",
-    "tmp": "0.0.25",
-    "use-strict": "^1.0.0",
-    "when": "^3.7.2"
+    "slash": "^1.0.0"
   },
-	"preferGlobal": true
+  "preferGlobal": true
 }
