@@ -2,6 +2,7 @@
   "name": "metio",
   "version": "0.1.0",
   "description": "Metio is a JavaScript tool for extracting images and generating css from Photoshop",
+  "author": "Constantin Dumitrescu <dum.constantin@gmail.com> (http://dumconstantin.com)",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -15,7 +16,6 @@
     "test": "metio test",
     "test-tap": "metio test-tap"
   },
-  "author": "Constantin Dumitrescu <dum.constantin@gmail.com>",
   "keywords": [
     "photoshop",
     "psd",
